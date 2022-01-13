@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-menu{
+   margin-top: 100px;
+}
+body{
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger {
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    transition: all 0.25s ease-in-out;
+    background-color: white;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translate(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translate(5px, -25px) rotate(
+-45deg
+)
+}
